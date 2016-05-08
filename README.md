@@ -140,9 +140,9 @@ We provide these commands for node server, hot loader server, build and test. no
 6. [Test](/test)
 
 ## Next Step
-integrate with nightwatch.js for automated browser testing
-More Documentation
-More Examples
+1. integrate with nightwatch.js for automated browser testing
+2. More Documentation
+3. More Examples
 
 ## Contributing
 
