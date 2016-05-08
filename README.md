@@ -23,14 +23,14 @@ the client-side.
 
 ## Features
 
-- React.js + React Router + Fluxxor on the client and server
-- Cient side render and Server side render
+- React.js + React Router + Fluxxor on the client and server.
+- Client side and Server side rendering.
 - Grunt + Webpack for watch + production builds, extract third party lib to a js bundle.
-- React Hot Loader for instant client updates
-- Multi Themes Mechanism
-- API request with Promsie. Intercept request and response
-- Localization and Internationalisation
-- Test With Mocha and Chai, Integrate with Grunt for automatic test.
+- React Hot Loader for instant client updates.
+- Multi Themes Mechanism support.
+- Promsie based API Request Call, which support  request and response interception.
+- Localization(L10N) and Internationalisation(I18N) support.
+- Test With Mocha and Chai, Integrate with Grunt for automation test.
 
 ## Installation
 
@@ -138,6 +138,11 @@ We provide these commands for node server, hot loader server, build and test. no
 4. [API Client](/docs/API_Cliet.md)
 5. [Localization](/lib/Localization)
 6. [Test](/test)
+
+## Next Step
+integrate with nightwatch.js for automated browser testing
+More Documentation
+More Examples
 
 ## Contributing
 
