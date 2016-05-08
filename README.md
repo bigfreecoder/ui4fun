@@ -45,7 +45,7 @@ After you clone or download this starter kit, you need run this command inside y
 
 Run `grunt server` and `grunt hot` in two terminal windows.
 
-Run `open -a /Applications/Google\ Chrome.app --args --disable-web-security` on Mac to open Chrome with disable security model. (Because we use gcc api to get data which does not support CROS, so we need disable security. If you use Windows, please search how to disable web security on Windows)
+Run `open -a /Applications/Google\ Chrome.app --args --disable-web-security` on Mac to open Chrome with disable security model. (Because we use external api to get initial data which does not support CROS, so we need disable security. If you use Windows, please search how to disable web security on Windows)
 
 Then type `http://locahost:8000` on Chrom to see the example.
 
@@ -143,7 +143,8 @@ We provide these commands for node server, hot loader server, build and test. no
 1. Integrate with nightwatch.js for automated browser testing
 2. More Documentation
 3. More Examples
-4. Suport latest NodeJS Version
+4. Suport latest NodeJS version
+5. Integrate with Open API as an example
 
 ## Contributing
 
