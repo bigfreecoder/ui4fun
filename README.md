@@ -1,8 +1,8 @@
-React Node Starter Kit
+ReactJS Starter Package:)
 ======================
 
 This is the starter kit for ReactJS, React-Router and Fluxxor based on NodeJS.
-We support Nodejs 0.12.x and 0.10.x.
+We support Nodejs 0.12.x.
 
 ## Overview
 
