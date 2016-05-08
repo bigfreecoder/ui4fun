@@ -1,7 +1,7 @@
 ReactJS Starter Package:)
 ======================
 
-This is the starter kit for ReactJS, React-Router and Fluxxor based on NodeJS.
+This is a start guide for ReactJS, React-Router and Fluxxor based on NodeJS.
 We support Nodejs 0.12.x.
 
 ## Overview
@@ -143,6 +143,7 @@ We provide these commands for node server, hot loader server, build and test. no
 1. Integrate with nightwatch.js for automated browser testing
 2. More Documentation
 3. More Examples
+4. Suport latest NodeJS Version
 
 ## Contributing
 
