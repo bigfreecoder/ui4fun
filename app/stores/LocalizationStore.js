@@ -1,0 +1,69 @@
+var Fluxxor = require('fluxxor');
+var Localization = require('../../lib/Localization/index.js');
+
+var LocalizationStore = Fluxxor.createStore({
+
+  initialize: function () {
+    this.language = "en_US";
+    this.country = "US";
+
+    var translateData = {
+      "zh_CN":{
+        translate:{
+          "this is a test string": "这是个测试字符串",
+          "param test for {0}": "参数测试: {0}",
+          "{0} param test {1}, should be {0}": "{0}个参数的测试{1},应该是{0}",
+          "it's different {{0}} and {0}": "区分{{0}}和{0}的翻译",
+          "{0} day, {1} month, {2} year": "{2}年{1}月{0}日",
+          "today is: #0#": "今天是: #0#",
+          "short-time":"!0!",
+          "detail-time":"$0$ !0!",
+          "number-format1":"@0@",
+          "number-format2":"^0^",
+          "number-format3":"&0&",
+          "number-format4":"^0^ and @0@ and &0& are same Number",
+          "currency-format":"%0%"
+        },
+        format: [
+          {tag:"{}", method:"replace"},
+          {tag:"##", method:"date", format:"yyyy年MM月dd日"},
+          {tag:"!!", method:"date", format:"MM月dd日, yyyy年"},
+          {tag:"$$", method:"date", format:"HH:mm:ss"},
+          {tag:"@@", method:"number", format:{"divider":",", "decimal":".", "group":3, scale: 0}},
+          {tag:"^^", method:"number", format:{"divider":" ", "decimal":".", "group":4, scale: 2}},
+          {tag:"&&", method:"number", format:{"divider":" ", "decimal":".", "group":4, scale: 5}},
+          {tag:"%%", method:"currency"}
+        ]
+      }
+    };
+
+    var currencyData = {
+      "AU":{
+        "sign":"$",
+        "divider":",",
+        "decimal":".",
+        "group":3,
+        "currency":"#{sign} #{amt}"
+      },
+      "AI":{
+        "sign":"\u20ac",
+        "divider":",",
+        "decimal":".",
+        "group":3,
+        "currency":"#{sign} #{amt}"
+      }
+    };
+
+    Localization.init(translateData, currencyData);
+  },
+
+  getState: function () {
+    return {
+      language: this.language,
+      country: this.country,
+      translate: Localization.getTranslater("zh_CN", "US")
+    };
+  }
+});
+
+module.exports = LocalizationStore;
