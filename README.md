@@ -47,7 +47,7 @@ Run `grunt server` and `grunt hot` in two terminal windows.
 
 Run `open -a /Applications/Google\ Chrome.app --args --disable-web-security` on Mac to open Chrome with disable security model. (Because we use external api to get initial data which does not support CROS, so we need disable security. If you use Windows, please search how to disable web security on Windows)
 
-Then type `http://locahost:8000` on Chrom to see the example.
+Then type `http://locahost:8000` on Chrome to see the example.
 
 ## Usage
 
