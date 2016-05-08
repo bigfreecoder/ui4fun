@@ -137,7 +137,7 @@ We provide these commands for node server, hot loader server, build and test. no
 3. [Multi Themes Mechanism](/docs/Theme.md)
 4. [API Client](/docs/API_Cliet.md)
 5. [Localization](/lib/Localization)
-6. [Test](/test)
+6. [Test](/test/Readme.md)
 
 ## Next Step
 1. Integrate with nightwatch.js for automated browser testing
